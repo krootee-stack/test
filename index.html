@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="เที่ยวชัยภูมิ เมืองแห่งขุนเขา ทุ่งดอกกระเจียว มอหินขาว และธรรมชาติอันงดงาม">
+<title>เที่ยวชัยภูมิ | Chaiyaphum Travel</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap');
+:root{--green:#174c3b;--deep:#102f28;--lime:#d5e8a5;--gold:#e8bd69;--cream:#f8f7f0;--ink:#20332c;--muted:#718078;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Prompt',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:absolute;z-index:5;width:100%;color:#fff}.brand{font-family:'Kanit';font-size:1.45rem;font-weight:600;letter-spacing:.3px}.brand span{color:var(--gold)}.navlinks{display:flex;gap:30px;font-size:.92rem}.navlinks a{opacity:.9}.navlinks a:hover{color:var(--lime)}.menu{display:none;background:none;border:0;color:white;font-size:1.7rem}
+.hero{min-height:690px;height:88vh;max-height:850px;display:flex;align-items:center;position:relative;color:#fff;background:linear-gradient(90deg,rgba(8,34,28,.82),rgba(8,34,28,.38) 55%,rgba(8,34,28,.08)),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85') center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,var(--cream))}.hero-content{position:relative;z-index:1;margin-left:10%;max-width:680px;padding-top:35px}.eyebrow{color:var(--lime);letter-spacing:3px;font-size:.82rem;font-weight:500}.hero h1{font-family:'Kanit';font-size:clamp(3.5rem,8vw,6.7rem);line-height:1.03;margin:16px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:1.08rem;line-height:1.9;color:#e9eee9;max-width:560px}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 23px;border-radius:50px;background:var(--gold);color:var(--deep);font-weight:600;margin-top:18px;transition:.25s;border:0}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #0003}.scroll{position:absolute;z-index:2;bottom:65px;right:8%;font-size:.78rem;letter-spacing:2px;writing-mode:vertical-rl;color:#fff9}
+section{padding:88px 8%}.section-head{max-width:700px;margin:0 auto 42px;text-align:center}.kicker{color:#8c9d65;font-size:.8rem;letter-spacing:2px;font-weight:600}.section-head h2{font-family:'Kanit';font-size:clamp(2rem,4vw,3.2rem);color:var(--deep);margin:8px 0 12px}.section-head p{color:var(--muted);line-height:1.8;margin:0}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.intro-img{height:440px;border-radius:4px 90px 4px 4px;overflow:hidden;position:relative}.intro-img img{width:100%;height:100%;object-fit:cover}.intro-copy h2{font:600 clamp(2rem,4vw,3.2rem)/1.25 'Kanit';color:var(--deep);margin:12px 0}.intro-copy p{line-height:2;color:var(--muted)}.facts{display:flex;gap:35px;margin-top:30px}.fact strong{display:block;font:600 1.8rem 'Kanit';color:var(--green)}.fact small{color:var(--muted)}
+.destinations{background:#eef1e8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 30px #20332c0c;transition:.3s}.card:hover{transform:translateY(-7px);box-shadow:0 18px 40px #20332c18}.card-img{height:230px;overflow:hidden;position:relative}.card-img img{width:100%;height:100%;object-fit:cover;transition:.5s}.card:hover img{transform:scale(1.06)}.tag{position:absolute;top:16px;left:16px;background:#f8f7f0eF;padding:6px 12px;border-radius:30px;font-size:.75rem;color:var(--green);font-weight:600}.card-body{padding:22px 22px 25px}.card-body h3{font:600 1.45rem 'Kanit';margin:0 0 8px;color:var(--deep)}.card-body p{color:var(--muted);font-size:.9rem;line-height:1.8;margin:0 0 15px}.more{color:#698348;font-weight:600;font-size:.88rem}.more:hover{color:var(--deep)}
+.feature{background:var(--deep);color:white;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.feature .section-head{text-align:left;margin:0}.feature h2{color:white}.feature p{color:#c3d0c9;line-height:1.9}.feature-img{height:420px;border-radius:100px 8px 8px 8px;overflow:hidden}.feature-img img{width:100%;height:100%;object-fit:cover}.season{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.season div{border-left:2px solid var(--gold);padding-left:14px}.season b{display:block;color:var(--lime);font-size:1rem}.season small{color:#c3d0c9}
+.planner{background:#fff}.planbox{max-width:900px;margin:auto;background:var(--cream);padding:35px;border-radius:18px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.field label{display:block;font-weight:500;margin-bottom:8px}.field select{width:100%;padding:13px;border:1px solid #dce2d8;border-radius:9px;background:white;color:var(--ink);font:inherit}.plan-result{grid-column:1/-1;background:var(--deep);color:white;padding:22px;border-radius:12px;line-height:1.9;display:none}.plan-result.show{display:block}.plan-result strong{color:var(--lime)}
+.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:190px 190px;gap:14px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:10px}.gallery img:first-child{grid-row:span 2}
+.cta{background:linear-gradient(120deg,#244f3d,#102f28);color:white;text-align:center;padding:75px 20px}.cta h2{font:600 clamp(2rem,4vw,3rem) 'Kanit';margin:0 0 10px}.cta p{color:#d0ddd4;margin:0}
+footer{background:#0b241e;color:#c1d0c8;padding:40px 8%;display:flex;justify-content:space-between;gap:25px;align-items:center;font-size:.85rem}footer strong{font:600 1.25rem 'Kanit';color:white}footer span{color:var(--gold)}
+.top{position:fixed;right:22px;bottom:22px;width:45px;height:45px;border:0;border-radius:50%;background:var(--gold);color:var(--deep);font-size:1.2rem;box-shadow:0 5px 20px #0002;display:none;z-index:8}.top.show{display:block}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:70px;left:5%;right:5%;padding:20px;background:#102f28;border-radius:12px;flex-direction:column;gap:16px}.navlinks.open{display:flex}.menu{display:block}.hero{height:760px;min-height:620px}.hero-content{margin:0 7%}.intro,.feature{grid-template-columns:1fr;gap:35px}.intro-img{height:330px}.cards{grid-template-columns:repeat(2,1fr)}.feature-img{height:330px}.gallery{grid-template-rows:140px 140px}}
+@media(max-width:560px){section{padding:65px 6%}.hero{min-height:650px}.hero h1{font-size:3.6rem}.hero p{font-size:.95rem}.cards{grid-template-columns:1fr}.card-img{height:220px}.facts{gap:20px}.fact strong{font-size:1.5rem}.planbox{grid-template-columns:1fr;padding:22px}.plan-result{grid-column:auto}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:160px 130px 130px}.gallery img:first-child{grid-row:auto;grid-column:span 2}footer{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="#">CHAIYAPHUM<span>.</span></a>
+  <div class="navlinks" id="navlinks"><a href="#about">รู้จักชัยภูมิ</a><a href="#places">สถานที่ท่องเที่ยว</a><a href="#season">เที่ยวช่วงไหนดี</a><a href="#planner">วางแผนเที่ยว</a></div>
+  <button class="menu" id="menu" aria-label="เปิดเมนู">☰</button>
+</nav>
+<header class="hero">
+ <div class="hero-content">
+  <div class="eyebrow">THE LAND OF BEAUTIFUL NATURE</div>
+  <h1>เที่ยว<span>ชัยภูมิ</span><br>ให้ใจได้พัก</h1>
+  <p>เปิดประสบการณ์ท่องเที่ยวเมืองแห่งขุนเขา สัมผัสทุ่งดอกกระเจียวสีชมพู มหัศจรรย์เสาหินธรรมชาติ และสายน้ำกลางผืนป่า</p>
+  <a class="btn" href="#places">ค้นพบสถานที่ท่องเที่ยว <span>↗</span></a>
+ </div><div class="scroll">SCROLL TO EXPLORE</div>
+</header>
+<main>
+<section id="about">
+ <div class="intro">
+  <div class="intro-img"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=85" alt="ธรรมชาติและภูเขาเขียวขจี"></div>
+  <div class="intro-copy"><div class="kicker">WELCOME TO CHAIYAPHUM</div><h2>เสน่ห์แห่งอีสาน<br>ที่รอให้คุณมาสัมผัส</h2><p>จังหวัดชัยภูมิโดดเด่นด้วยภูมิประเทศที่หลากหลาย ทั้งผืนป่า ภูเขา น้ำตก และลานหินรูปร่างแปลกตา มีแหล่งท่องเที่ยวทางธรรมชาติที่งดงามและวัฒนธรรมท้องถิ่นที่มีเอกลักษณ์ เหมาะกับการเดินทางมาพักผ่อนและออกไปค้นพบสิ่งใหม่</p><div class="facts"><div class="fact"><strong>4</strong><small>ฤดูกาลแห่งการเดินทาง</small></div><div class="fact"><strong>∞</strong><small>ความประทับใจ</small></div></div></div>
+ </div>
+</section>
+<section class="destinations" id="places">
+ <div class="section-head"><div class="kicker">EXPLORE THE HIGHLIGHTS</div><h2>จุดหมายห้ามพลาด</h2><p>คัดสรรสถานที่ท่องเที่ยวเด่นของจังหวัดชัยภูมิ ให้คุณเลือกออกเดินทางในแบบที่ชอบ</p></div>
+ <div class="cards">
+  <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="ภูมิประเทศหินและทุ่งหญ้า"><span class="tag">ธรรมชาติ</span></div><div class="card-body"><h3>มอหินขาว</h3><p>ชมกลุ่มเสาหินทรายขนาดใหญ่ที่เกิดจากกระบวนการทางธรรมชาติ จนได้รับฉายาว่าสโตนเฮนจ์เมืองไทย</p><a class="more" href="https://www.google.com/maps/search/?api=1&query=มอหินขาว+ชัยภูมิ" target="_blank" rel="noopener">ดูแผนที่ ↗</a></div></article>
+  <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85" alt="ดอกไม้และธรรมชาติ"><span class="tag">ดอกไม้</span></div><div class="card-body"><h3>ทุ่งดอกกระเจียว</h3><p>ชมดอกกระเจียวสีชมพูอมม่วงบานสะพรั่งกลางทุ่งหญ้า โดยเฉพาะช่วงฤดูฝนในอุทยานแห่งชาติป่าหินงาม</p><a class="more" href="https://www.google.com/maps/search/?api=1&query=อุทยานแห่งชาติป่าหินงาม+ชัยภูมิ" target="_blank" rel="noopener">ดูแผนที่ ↗</a></div></article>
+  <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=900&q=85" alt="น้ำตกกลางป่า"><span class="tag">น้ำตก</span></div><div class="card-body"><h3>น้ำตกตาดโตน</h3><p>พักผ่อนท่ามกลางร่มไม้และสายน้ำในอุทยานแห่งชาติตาดโตน จุดหมายธรรมชาติยอดนิยมไม่ไกลจากตัวเมือง</p><a class="more" href="https://www.google.com/maps/search/?api=1&query=อุทยานแห่งชาติตาดโตน+ชัยภูมิ" target="_blank" rel="noopener">ดูแผนที่ ↗</a></div></article>
+  <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="วิวภูเขาและทะเลหมอก"><span class="tag">จุดชมวิว</span></div><div class="card-body"><h3>ผาหำหด</h3><p>จุดชมวิวบนแนวผาสูงในเขตอุทยานแห่งชาติไทรทอง มองเห็นทิวเขาสลับซับซ้อนและผืนป่ากว้างไกล</p><a class="more" href="https://www.google.com/maps/search/?api=1&query=ผาหำหด+ชัยภูมิ" target="_blank" rel="noopener">ดูแผนที่ ↗</a></div></article>
+  <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85" alt="อ่างเก็บน้ำและภูเขา"><span class="tag">พักผ่อน</span></div><div class="card-body"><h3>เขื่อนจุฬาภรณ์</h3><p>ชมทิวทัศน์อ่างเก็บน้ำบนพื้นที่สูง ท่ามกลางภูเขาและอากาศสดชื่น เหมาะกับการพักผ่อนและถ่ายภาพ</p><a class="more" href="https://www.google.com/maps/search/?api=1&query=เขื่อนจุฬาภรณ์+ชัยภูมิ" target="_blank" rel="noopener">ดูแผนที่ ↗</a></div></article>
+  <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85" alt="ป่าไม้เขียวชอุ่ม"><span class="tag">ผืนป่า</span></div><div class="card-body"><h3>อุทยานแห่งชาติภูแลนคา</h3><p>สัมผัสธรรมชาติของแนวภูเขา ป่าไม้ และจุดชมวิวที่มีทัศนียภาพสวยงาม เหมาะกับสายเดินทางเชิงธรรมชาติ</p><a class="more" href="https://www.google.com/maps/search/?api=1&query=อุทยานแห่งชาติภูแลนคา+ชัยภูมิ" target="_blank" rel="noopener">ดูแผนที่ ↗</a></div></article>
+ </div>
+</section>
+<section class="feature" id="season">
+ <div class="feature-copy"><div class="kicker">WHEN TO VISIT</div><h2 style="font:600 clamp(2rem,4vw,3.2rem)/1.25 'Kanit';margin:8px 0 12px">เลือกฤดูที่ใช่<br>แล้วออกเดินทาง</h2><p>ชัยภูมิเที่ยวได้ตลอดปี แต่ละฤดูกาลมีเสน่ห์ต่างกัน ก่อนเดินทางควรตรวจสอบสภาพอากาศ ประกาศอุทยาน และช่วงเปิดให้เข้าชมของแต่ละพื้นที่</p><div class="season"><div><b>ฤดูฝน</b><small>มิ.ย. – ต.ค. · ดอกกระเจียวและผืนป่าเขียวสด</small></div><div><b>ฤดูหนาว</b><small>พ.ย. – ก.พ. · อากาศเย็น เหมาะชมวิว</small></div><div><b>ฤดูร้อน</b><small>มี.ค. – พ.ค. · วางแผนเที่ยวช่วงเช้า</small></div></div></div>
+ <div class="feature-img"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1100&q=85" alt="เทือกเขาและธรรมชาติ"></div>
+</section>
+<section class="planner" id="planner">
+ <div class="section-head"><div class="kicker">MAKE YOUR TRIP</div><h2>วางแผนเที่ยวในแบบคุณ</h2><p>เลือกสไตล์การเดินทาง แล้วรับไอเดียเส้นทางเบื้องต้นสำหรับทริปชัยภูมิ</p></div>
+ <div class="planbox">
+  <div class="field"><label for="style">สไตล์ที่ชอบ</label><select id="style"><option value="nature">ธรรมชาติและน้ำตก</option><option value="flower">ทุ่งดอกไม้และวิวภูเขา</option><option value="relax">พักผ่อนชมวิว</option></select></div>
+  <div class="field"><label for="days">ระยะเวลา</label><select id="days"><option value="1">1 วัน</option><option value="2">2 วัน 1 คืน</option><option value="3">3 วัน 2 คืน</option></select></div>
+  <button class="btn" id="makePlan" style="margin-top:0;align-self:end;justify-content:center">สร้างไอเดียเส้นทาง ✦</button>
+  <div class="plan-result" id="planResult" aria-live="polite"></div>
+ </div>
+</section>
+<section>
+ <div class="section-head"><div class="kicker">CAPTURE THE MOMENT</div><h2>ภาพความประทับใจ</h2><p>ธรรมชาติคือแรงบันดาลใจของทุกการเดินทาง</p></div>
+ <div class="gallery">
+  <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="ภูเขาและทะเลสาบ">
+  <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=700&q=85" alt="น้ำตก">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=85" alt="ทุ่งหญ้ากว้าง">
+  <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=85" alt="ป่าไม้">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=700&q=85" alt="ภูเขาและผืนน้ำ">
+ </div>
+</section>
+<div class="cta"><h2>ชัยภูมิ... แล้วคุณจะหลงรัก</h2><p>ออกไปสัมผัสธรรมชาติ เก็บความทรงจำดี ๆ และช่วยกันท่องเที่ยวอย่างรับผิดชอบ</p><a class="btn" href="#places">เริ่มต้นค้นหาที่เที่ยว ↗</a></div>
+</main>
+<footer><div><strong>CHAIYAPHUM<span>.</span> TRAVEL</strong><div>เสน่ห์ธรรมชาติแห่งเมืองชัยภูมิ</div></div><div>เว็บไซต์ประชาสัมพันธ์การท่องเที่ยวจังหวัดชัยภูมิ<br>ข้อมูลสถานที่และช่วงเวลาเปิดให้บริการควรตรวจสอบก่อนเดินทาง</div><div>© <span id="year"></span> Chaiyaphum Travel</div></footer>
+<button class="top" id="top" aria-label="กลับขึ้นด้านบน">↑</button>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const plans={
+ nature:{1:'เริ่มเช้าที่อุทยานแห่งชาติตาดโตน เดินชมธรรมชาติและน้ำตก จากนั้นแวะเที่ยวตัวเมืองชัยภูมิ',2:'วันแรกเที่ยวอุทยานแห่งชาติตาดโตนและพักในตัวเมือง วันที่สองเดินทางชมมอหินขาวและวิวภูแลนคา',3:'วันแรกเที่ยวตาดโตนและพักในเมือง วันที่สองเดินทางสู่มอหินขาวและภูแลนคา วันที่สามเลือกแวะจุดชมวิวก่อนเดินทางกลับ'},
+ flower:{1:'เดินทางไปอุทยานแห่งชาติป่าหินงาม ชมทุ่งดอกกระเจียวตามฤดูกาลและลานหินงาม',2:'วันแรกเที่ยวอุทยานแห่งชาติป่าหินงาม วันที่สองเดินทางต่อไปยังอุทยานแห่งชาติไทรทองและจุดชมวิว (ตรวจสอบระยะทางและสภาพเส้นทาง)',3:'วันแรกชมทุ่งดอกกระเจียวป่าหินงาม วันที่สองเที่ยวอุทยานแห่งชาติไทรทองและผาหำหด วันที่สามเดินทางกลับโดยแวะพักตามเส้นทาง'},
+ relax:{1:'ใช้เวลาพักผ่อนชมวิวบริเวณเขื่อนจุฬาภรณ์และพื้นที่ธรรมชาติโดยรอบ',2:'วันแรกเดินทางชมเขื่อนจุฬาภรณ์และพักผ่อน วันที่สองเที่ยวชมธรรมชาติบริเวณใกล้เคียงก่อนเดินทางกลับ',3:'แบ่งเวลาเที่ยวเขื่อนจุฬาภรณ์ ภูแลนคา และแหล่งธรรมชาติใกล้เคียงอย่างไม่เร่งรีบ'}
+};
+document.getElementById('makePlan').addEventListener('click',()=>{
+ const s=document.getElementById('style').value,d=document.getElementById('days').value;
+ const names={nature:'ธรรมชาติและน้ำตก',flower:'ดอกไม้และวิวภูเขา',relax:'พักผ่อนชมวิว'};
+ const out=document.getElementById('planResult');
+ out.innerHTML='<strong>ไอเดียทริป '+d+' วัน · '+names[s]+'</strong><br>'+plans[s][d]+'<br><small>หมายเหตุ: เส้นทางเป็นเพียงแนวทาง ควรตรวจสอบเวลาเปิด-ปิด สภาพอากาศ ระยะทาง และประกาศของอุทยานก่อนออกเดินทาง</small>';
+ out.classList.add('show');
+});
+const topBtn=document.getElementById('top');
+window.addEventListener('scroll',()=>topBtn.classList.toggle('show',window.scrollY>500));
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('year').textContent=new Date().getFullYear()+543;
+</script>
+</body>
+</html>
